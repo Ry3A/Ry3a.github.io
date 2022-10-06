@@ -1,7 +1,93 @@
-#header{
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+dt:hover {
+    background-color: #F89B4D;
+}
+
+header{
+    margin: 0 auto;
     position:relative;
-    width: 900px;
-    height: 200px;
-    background-color: #25B33f;
-    margin-bottom: 10px;
+    width: 700px;
+    height: auto;
+    background-image: url(https://i.pinimg.com/originals/6c/4c/a4/6c4ca43b85bb6c0f98afd83e98186ece.jpg);
+    padding: 0 20px 20px 20px;
+    border: 5px solid #C2B9B0;
+}
+
+nav{
+    position: static;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+html {
+    background-color: #7E685A;
+}
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #C2CAD0;
+    padding: 0 20px 20px 20px;
+    border: 5px solid #C2B9B0;
+}
+
+footer{
+    margin: 0 auto;
+    position:relative;
+    width: 700px;
+    height: auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid #C2B9B0;
+}
+
+#content, #colRight {
+    margin-left:45px;
+    float:right;
+    position: fixed;
+    width:210px;
+}
+input::placeholder {
+    color: red;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#enter, #name{
+    background: #ffe; /* Цвет фона */
+    border: 1px solid #29B0D9; /* Параметры рамки */
+}
+
+#content, #right {
+    margin-left:45px;
+    float:right;
+    position: absolute;
+    width:210px;
+}
+
+#container .column {
+    position: relative;
+    float: right;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #7E685A;
+    text-shadow: 3px 3px 1px black;
+}
+
+
+img {
+    display: flex;
+    margin: 0 auto;
+    shape-image-threshold: revert;
 }
