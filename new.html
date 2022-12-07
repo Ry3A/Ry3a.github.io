@@ -4,22 +4,38 @@
 
     <head>
     <meta charset="UTF-8">
-    <abbr title>"Электронная библиотека">
-        ELB
-    </abbr>
+    <title>Электронная библиотека</title>
 
     <link rel="icon" href="bookopen.png" type="image/x-icon">
     <link href="main.css" rel="stylesheet" type="text/css">
     </head>
 
+    <script src="https://kit.fontawesome.com/98db032af2.js" crossorigin="anonymous"></script>
 
-        <aside>
 <aside id="colRight" class="T1_item">
     Литература учит нас говорить так, чтобы все слушали
     Каким образом: учитесь у писателей и поэтов — речь должна быть странной, необычной,
     нарушать привычные ожидания.
 </aside>
-<nav>
+    <aside>
+        <div class="boxNote">
+            <div class="notification" id="notification">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <ol class="ol">
+                    <li class="icon"> <span>Text</span></li>
+                    <li class="icon"> <span>Text</span></li>
+                    <li class="icon"> <span>Text</span></li>
+                    <li class="icon"> <span>Text</span></li>
+                </ol>
+                <span id="num"class="num"></span>
+            </div>
+        </div>
+        <script src="accumulator.js"></script>
+    </aside>
+
+
+
+    <nav>
     <div class="navbar">
         <div class="container nav-container">
             <input class="checkbox" type="checkbox" name="" id="" />
@@ -73,10 +89,10 @@
     </nav>
     <div class='centering_icons'>
         <ul class="container_for_icons">
-            <li><a href=""><i class="fa fa-youtube">f</i></a></li>
-            <li><a href=""><i class="fa fa-instagram">vk</i></a></li>
-            <li><a href=""><i class="fa fa-paper-plane">tw</i></a></li>
-            <li><a href=""><i class="fa fa-twitter">gh</i></a></li>
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-paper-plane"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
             <li><a href=""><i class="fa fa-github"></i></a></li>
         </ul>
     </div>
@@ -87,10 +103,49 @@
 
     <canvas id="canvas"></canvas>
     <input id="toggle-heart" type="checkbox" onclick="init()" /> <label for="toggle-heart" aria-label="like" id="label1">❤</label>
+    <label id="like1" aria-label="like" id="label2"></label>
     <img src="heart2.png" id="photo" width="30px">
-    <!--<input id="toggle-heart2" type="checkbox" onclick="init2()" /> <label for="toggle-heart2" aria-label="like" id="label1"><img src="garbage.png" width="30px"></label>-->
+    <script src="sortArray.js.js"></script>
+
     <script src="script.js"></script>
 
+    <div class="content">
+        <p style="top:50px; opacity: 50%">Текст1</p>
+    </div>
+
+    <div>
+        <button onclick="push()">next</button>
+        <button onclick="delt()" style="left:40px; top:70px;">del</button>
+    </div>
+
+    <script>
+        let j = ["Текст1","Текст2","Текст3","Текст4","Текст5"];
+        let ind_content=0;
+
+        function push(){
+            if (ind_content == j.length-1){
+                ind_content = 0;
+            }
+            else{
+                ind_content += 1;
+            }
+            document.querySelector('.content').textContent = j[ind_content];
+        }
+
+        function delt(){
+            j.shift();
+        }
+    </script>
+
+    <style>
+        button{
+            background-color: aqua;
+        }
+        button.active{
+            left:0;
+            top:50px;
+        }
+    </style>
 
     <section>
     <h3 id="Topic1">Роман-эпопея</h3>
@@ -166,7 +221,10 @@
             <span></span>
             <div class="content">
                 <h2>Зачем читать книги?</h2>
-                <p> Это отличный способ получить настоящее удовольствие, а также сделать шаг на пути к самосовершенствованию. Чтение развивает память, дает новые знания и идеи, наполняет мозг полезными мыслями.</p>
+                <div>
+                    <p id = "box123"> Это отличный способ получить настоящее удовольствие, а также сделать шаг на пути к самосовершенствованию. Чтение развивает память, дает новые знания и идеи, наполняет мозг полезными мыслями.</p>
+                    <script src="script2.js"></script>
+                </div>
                 <a href="#">Подробнее</a>
             </div>
         </div>
@@ -341,37 +399,7 @@
             </p>
         </div>
     </div>
-    <div class="task_3">
-        <h2>Contact</h2>
-        <form action="">
-            <input type="text" name="" id="T3_item_1" placeholder="Имя" />
-            <input
-                    type="text"
-                    name=""
-                    id="T3_item_2"
-                    placeholder="Фамилия"
-            />
-            <input
-                    type="email"
-                    name=""
-                    id="T3_item_3"
-                    placeholder="Почта"
-            />
-            <input
-                    type="tel"
-                    name=""
-                    id="T3_item_4"
-                    placeholder="Телефон"
-            />
-            <input
-                    type="text"
-                    name=""
-                    id="T3_item_5"
-                    placeholder="Сообщение"
-            />
-            <input type="submit" value="Отправить" id="T3_item_6" />
-        </form>
-    </div>
+
 
     <div class="task_4">
         <footer>
