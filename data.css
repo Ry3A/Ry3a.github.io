@@ -150,17 +150,22 @@ html {
     "item_1 item_2 item_3 item_4";
 }
 
-.task_4 footer h3 {
-    color: #527c82;
-}
 
 .task_4 footer ul li:hover {
     color: #527c82;
     cursor: pointer;
 }
 
+.task_4 footer h3 {
+    color: lightgray;
+}
 .task_4 footer ul {
     position: relative;
+    color: lightgray;
+}
+
+.task_4 p{
+    color: lightgray;
 }
 
 .task_4 footer ul::before {
@@ -323,6 +328,11 @@ footer{
     padding: 0 20px 20px 20px;
     border: 5px solid #C2B9B0;
 }
+
+
+
+
+
 /* Общие стили */
 *, *:after, *:before {
     box-sizing: border-box;
@@ -337,7 +347,8 @@ footer{
 .hover-text-one {
     overflow: hidden;
     margin: 0;
-    width: 100%;
+    margin-right: -50px;
+    display: flex;
     list-style: none;
     text-align: center;
 }
@@ -385,6 +396,7 @@ footer{
 .hover-text-one figure h3,
 .hover-text-one figure p {
     margin: 0;
+    margin-top: -20px;
 }
 .hover-text-one figure p {
     letter-spacing: 1px;
@@ -447,71 +459,10 @@ figure.effect-text-three:hover p {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
-.task_2 {
-    display: grid;
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 8px;
-
-    grid-template-areas:
-    "item_1 item_1 item_2 item_3"
-    "item_5 item_7 item_2 item_4"
-    "item_5 item_6 item_6 item_6";
+.cardud{
+    display: inline-flex;
+    margin: 0 0px;
+    flex-wrap: wrap;
 }
 
-.task_2 div {
-    background-color: grey;
-    border-radius: 5px;
-    padding: 10px;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-    transition: 0.1s;
-}
-
-.task_2 div:hover {
-    background-color: #527c82;
-}
-
-.task_2 div p {
-    margin-top: 10px;
-}
-
-.task_2 div img {
-    width: 100px;
-    height: 100px;
-}
-
-#T2_item_1 {
-    grid-area: item_1;
-}
-
-#T2_item_2 {
-    grid-area: item_2;
-}
-
-#T2_item_3 {
-    grid-area: item_3;
-}
-
-#T2_item_4 {
-    grid-area: item_4;
-}
-
-#T2_item_5 {
-    grid-area: item_5;
-}
-
-#T2_item_6 {
-    grid-area: item_6;
-}
-
-#T2_item_7 {
-    grid-area: item_7;
-}
 

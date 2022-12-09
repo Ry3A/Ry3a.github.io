@@ -78,8 +78,8 @@ footer{
     position:relative;
     max-width: 1200px;
     height: auto;
-    padding: 0 20px 20px 20px;
-    border: 5px solid #C2B9B0;
+    /*padding: 0 20px 20px 20px;
+    border: 5px solid #C2B9B0;*/
 }
 
 
@@ -176,15 +176,18 @@ footer{
 #content, #colRight {
     margin-left:5px;
     float:right;
-    position: fixed;
+    position: absolute;
     width:120px;
+    top: 125%;
+    left:0;
 }
+/*
 #content, #right {
     margin-left:45px;
     float:right;
     position: absolute;
     width:210px;
-}
+}*/
 
 
 
@@ -663,11 +666,14 @@ h1 {
     position: relative;
     float: right;
 }
-
+header h1{
+    color: #7E685A;
+}
 h1 {
     margin: 0;
     padding: 20px 0;
-    color: #7E685A;
+    /*color: #7E685A;*/
+    color: #C2B9B0;
     text-shadow: 3px 3px 1px black;
 }
 
@@ -899,6 +905,7 @@ figure.effect-text-three:hover p {
     main {
         width: 790px;
     }
+
     footer{
         width: 790px;
     }
@@ -1414,18 +1421,25 @@ ul {
     "item_1 item_2 item_3 item_4";
 }
 
-.task_4 footer h3 {
-    color: #527c82;
-}
+
 
 .task_4 footer ul li:hover {
     color: #527c82;
     cursor: pointer;
 }
 
+.task_4 footer h3 {
+    color: lightgray;
+}
 .task_4 footer ul {
     position: relative;
+    color: lightgray;
 }
+
+.task_4 p{
+    color: lightgray;
+}
+
 
 .task_4 footer ul::before {
     content: '';
